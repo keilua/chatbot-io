@@ -2,6 +2,7 @@ import viewNav from './nav';
 import viewbot from './bot';
 import viewBot_Message from './bots_message';
 import viewMessage from './message';
+import viewBar from './bar';
 
 export default (view) => (`
     <div class="row">
@@ -13,11 +14,14 @@ export default (view) => (`
           <div class="row conversations">
             <div class="col-6">${viewBot_Message()}</div>
             <div class="col-6">${viewMessage()}</div>
+            <div class="row messages">
+              <div class="input-group">${viewBar()}</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
     ${view}
     </div>
-  
 `);
