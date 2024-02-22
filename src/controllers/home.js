@@ -45,16 +45,15 @@ const Home = class {
       messagesContainer.insertAdjacentHTML('beforeend', messageHTML);
 
       if (messageText.trim().toLowerCase() === 'hello') {
-        this.sendBotResponse();
+        this.sendBotResponse('sup');
       }
-
       resolve();
     });
   }
 
-  sendBotResponse() {
+  sendBotResponse(message) {
     const messagesContainer = document.querySelector('.messages');
-    const botResponseHTML = viewBotsMessage();
+    const botResponseHTML = viewBotsMessage(message);
     messagesContainer.insertAdjacentHTML('beforeend', botResponseHTML);
   }
 };
