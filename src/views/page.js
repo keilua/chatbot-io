@@ -19,9 +19,9 @@ export default (view) => (`
             </div>
           </div>
         </div>
+        
       </div>
     </div>
-    
     ${view}
     </div>
 `);
