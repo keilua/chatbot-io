@@ -1,4 +1,4 @@
-import Error404 from './controllers/error404';
+import Error404 from './controllers/Quatre04';
 
 const Router = class {
   constructor(routes = []) {

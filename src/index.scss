@@ -9,8 +9,8 @@ body{
   font-style: normal;
 }
 
-.messages {
-  position: relative;
+.typing-bar {
+  position: absolute;
   width: 100rem;
 }
 .input-group {
@@ -23,7 +23,7 @@ body{
 
 .conversations {
   height: 80vh;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .icone {
